@@ -1,0 +1,6 @@
+@TheGondolaMuseumWebApi_HostAddress = http://localhost:5035
+
+GET {{TheGondolaMuseumWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

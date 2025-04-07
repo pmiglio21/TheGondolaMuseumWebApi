@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "aMdGkrSanG3Xwyr+Q9s2c7rMEedh3FKlI723zZ3TNIM=",
+  "Source": "TheGondolaMuseumWebApi",
+  "BasePath": "_content/TheGondolaMuseumWebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
