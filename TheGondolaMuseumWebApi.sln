@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGondolaMuseumWebApi", "TheGondolaMuseumWebApi\TheGondolaMuseumWebApi.csproj", "{2EC90FEF-425C-41EB-9988-4E40BA90CBFB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGondolaMuseumWebApi", "TheGondolaMuseumWebApi\TheGondolaMuseumWebApi.csproj", "{EF25D053-D786-45FF-9EEA-559A04325ADD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2EC90FEF-425C-41EB-9988-4E40BA90CBFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2EC90FEF-425C-41EB-9988-4E40BA90CBFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2EC90FEF-425C-41EB-9988-4E40BA90CBFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2EC90FEF-425C-41EB-9988-4E40BA90CBFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF25D053-D786-45FF-9EEA-559A04325ADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF25D053-D786-45FF-9EEA-559A04325ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF25D053-D786-45FF-9EEA-559A04325ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF25D053-D786-45FF-9EEA-559A04325ADD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {5341712D-355C-45E7-9041-7BBF945DA6C8}
+		SolutionGuid = {A078683E-60C0-4347-A224-EC56F289896D}
 	EndGlobalSection
 EndGlobal

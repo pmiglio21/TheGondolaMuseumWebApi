@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pugHFzX24Gw=",
+  "dgSpecHash": "UXhIpoiap2U=",
   "success": true,
-  "projectFilePath": "C:\\Users\\pmigl\\OneDrive\\Documents\\GitHub\\TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi.csproj",
+  "projectFilePath": "C:\\Users\\pmigl\\OneDrive\\Documents\\GitHub\\TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pmigl\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\pmigl\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
