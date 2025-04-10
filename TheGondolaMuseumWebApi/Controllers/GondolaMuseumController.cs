@@ -14,8 +14,18 @@ namespace TheGondolaMuseumWebApi.Controllers
         }
 
         [HttpGet(Name = "GetStringFromApi")]
-        public string GetStringFromApi()
+        public string GetSingleByVideoId()
         {
+            GondolaVideosDL.SelectSingleByVideoId(0);
+
+            return "The Gondola Museum API is up and running!";
+        }
+
+        [HttpGet(Name = "GetStringFromApi")]
+        public string GetMultipleByTag()
+        {
+            GondolaVideosDL.SelectMultipleByTag("");
+
             return "The Gondola Museum API is up and running!";
         }
     }
