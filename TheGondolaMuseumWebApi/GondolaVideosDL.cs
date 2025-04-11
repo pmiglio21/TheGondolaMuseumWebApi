@@ -1,13 +1,14 @@
 ﻿using System;
 using Microsoft.Data.SqlClient;
+using TheGondolaMuseumWebApi.Models;
 
 namespace TheGondolaMuseumWebApi
 {
     public static class GondolaVideosDL
     {
-        public static string SelectSingleByVideoId(int videoId)
+        public static GondolaVideoItem SelectSingleByVideoId(int videoId)
         {
-            string message = "";
+            GondolaVideoItem gondolaVideoItem = new GondolaVideoItem();
 
             // Connection string to connect to the local SQL Server instance
             string connectionString = "Server=localhost;Database=Gondola;Trusted_Connection=True;User ID=USER;Password=PASS;TrustServerCertificate=True;";
@@ -30,8 +31,7 @@ namespace TheGondolaMuseumWebApi
                         {
                             while (reader.Read())
                             {
-                                var a = reader["VideoName"];
-                                var b = 0;
+                                gondolaVideoItem = gondolaVideoItem.ToGondolaVideoItem(reader);
                             }
                         }
                     }
@@ -43,7 +43,7 @@ namespace TheGondolaMuseumWebApi
                 }
             }
 
-            return message;
+            return gondolaVideoItem;
         }
 
         public static string SelectMultipleByTag(string tag)
@@ -52,6 +52,8 @@ namespace TheGondolaMuseumWebApi
 
             // Connection string to connect to the local SQL Server instance
             string connectionString = "Server=localhost;Database=Gondola;Trusted_Connection=True;User ID=USER;Password=PASS;TrustServerCertificate=True;";
+
+            SelectSingleByVideoId(2);
 
             // Create a connection object
             using (SqlConnection connection = new SqlConnection(connectionString))

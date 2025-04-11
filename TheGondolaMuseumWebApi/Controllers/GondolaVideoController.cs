@@ -4,16 +4,16 @@ namespace TheGondolaMuseumWebApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class GondolaMuseumController : ControllerBase
+    public class GondolaVideoController : ControllerBase
     {
-        private readonly ILogger<GondolaMuseumController> _logger;
+        private readonly ILogger<GondolaVideoController> _logger;
 
-        public GondolaMuseumController(ILogger<GondolaMuseumController> logger)
+        public GondolaVideoController(ILogger<GondolaVideoController> logger)
         {
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetStringFromApi")]
+        [HttpGet("GetSingleByVideoId")]
         public string GetSingleByVideoId()
         {
             GondolaVideosDL.SelectSingleByVideoId(0);
@@ -21,7 +21,7 @@ namespace TheGondolaMuseumWebApi.Controllers
             return "The Gondola Museum API is up and running!";
         }
 
-        [HttpGet(Name = "GetStringFromApi")]
+        [HttpGet("GetMultipleByTag")]
         public string GetMultipleByTag()
         {
             GondolaVideosDL.SelectMultipleByTag("");
