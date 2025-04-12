@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace TheGondolaMuseumWebApi.Controllers
 {
@@ -16,17 +17,13 @@ namespace TheGondolaMuseumWebApi.Controllers
         [HttpGet("GetSingleByVideoId")]
         public string GetSingleByVideoId()
         {
-            GondolaVideosDL.SelectSingleByVideoId(0);
-
-            return "The Gondola Museum API is up and running!";
+            return JsonConvert.SerializeObject(GondolaVideosDL.SelectSingleByVideoId(0));
         }
 
         [HttpGet("GetMultipleByTag")]
         public string GetMultipleByTag()
         {
-            GondolaVideosDL.SelectMultipleByTag("");
-
-            return "The Gondola Museum API is up and running!";
+            return JsonConvert.SerializeObject(GondolaVideosDL.SelectMultipleByTag(""));
         }
     }
 }

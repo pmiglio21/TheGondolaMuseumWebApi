@@ -46,14 +46,12 @@ namespace TheGondolaMuseumWebApi
             return gondolaVideoItem;
         }
 
-        public static string SelectMultipleByTag(string tag)
+        public static List<GondolaVideoItem> SelectMultipleByTag(string tag)
         {
-            string message = "";
+            List<GondolaVideoItem> gondolaVideoItems = new List<GondolaVideoItem>();
 
             // Connection string to connect to the local SQL Server instance
             string connectionString = "Server=localhost;Database=Gondola;Trusted_Connection=True;User ID=USER;Password=PASS;TrustServerCertificate=True;";
-
-            SelectSingleByVideoId(2);
 
             // Create a connection object
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -73,8 +71,9 @@ namespace TheGondolaMuseumWebApi
                         {
                             while (reader.Read())
                             {
-                                var a = reader["VideoName"];
-                                var b = 0;
+                                GondolaVideoItem gondolaVideoItem = new GondolaVideoItem();
+                                
+                                gondolaVideoItems.Add(gondolaVideoItem.ToGondolaVideoItem(reader));
                             }
                         }
                     }
@@ -86,7 +85,7 @@ namespace TheGondolaMuseumWebApi
                 }
             }
 
-            return message;
+            return gondolaVideoItems;
         }
     }
 }

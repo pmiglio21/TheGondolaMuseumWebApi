@@ -22,13 +22,13 @@ namespace TheGondolaMuseumWebApi.Models
             GondolaVideoItem gondolaVideoItem = new GondolaVideoItem
             {
                 VideoId = (long)reader["VideoId"],
-                VideoName = (string)reader["VideoName"],
-                IsFavorite = (string)reader["Favorite"] == "x",
-                OriginalFileName = (string)reader["VideoName"],
+                VideoName = ConvertFromDBVal<string>(reader["VideoName"]),
+                IsFavorite = ConvertFromDBVal<string>(reader["Favorite"]) == "x",
+                OriginalFileName = ConvertFromDBVal<string>(reader["VideoName"]),
                 Tags = new string[0], // Initialize with an empty array
-                MusicOrigin = (string)reader["MusicOrigin"],
-                MusicName = (string)reader["MusicName"],
-                BackgroundArtOrigin = (string)reader["BackgroundArtOrigin"],
+                MusicOrigin = ConvertFromDBVal<string>(reader["MusicOrigin"]),
+                MusicName = ConvertFromDBVal<string>(reader["MusicName"]),
+                BackgroundArtOrigin = ConvertFromDBVal<string>(reader["BackgroundArtOrigin"]),
                 GondolaCreator = ConvertFromDBVal<string>(reader["GondolaCreator"]),
                 EarliestFoundDateOfPosting = (int)reader["EarliestFoundDateOfPosting"],
                 SimilarVideos = new int[0], // Initialize with an empty array
