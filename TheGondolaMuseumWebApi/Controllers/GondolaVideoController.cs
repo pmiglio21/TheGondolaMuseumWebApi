@@ -15,9 +15,9 @@ namespace TheGondolaMuseumWebApi.Controllers
         }
 
         [HttpGet("GetSingleByVideoId")]
-        public string GetSingleByVideoId()
+        public string GetSingleByVideoId(int videoId)
         {
-            return JsonConvert.SerializeObject(GondolaVideosDL.SelectSingleByVideoId(0));
+            return JsonConvert.SerializeObject(GondolaVideosDL.SelectSingleByVideoId(videoId));
         }
 
         [HttpGet("GetMultipleByTag")]

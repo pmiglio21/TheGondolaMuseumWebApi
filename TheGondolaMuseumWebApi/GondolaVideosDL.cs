@@ -11,7 +11,7 @@ namespace TheGondolaMuseumWebApi
             GondolaVideoItem gondolaVideoItem = new GondolaVideoItem();
 
             // Connection string to connect to the local SQL Server instance
-            string connectionString = "Server=localhost;Database=Gondola;Trusted_Connection=True;User ID=USER;Password=PASS;TrustServerCertificate=True;";
+            string connectionString = "Server=localhost;Database=Gondola;Trusted_Connection=True;TrustServerCertificate=True;";
 
             // Create a connection object
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -51,7 +51,7 @@ namespace TheGondolaMuseumWebApi
             List<GondolaVideoItem> gondolaVideoItems = new List<GondolaVideoItem>();
 
             // Connection string to connect to the local SQL Server instance
-            string connectionString = "Server=localhost;Database=Gondola;Trusted_Connection=True;User ID=USER;Password=PASS;TrustServerCertificate=True;";
+            string connectionString = "Server=localhost;Database=Gondola;Trusted_Connection=True;TrustServerCertificate=True;";
 
             // Create a connection object
             using (SqlConnection connection = new SqlConnection(connectionString))
