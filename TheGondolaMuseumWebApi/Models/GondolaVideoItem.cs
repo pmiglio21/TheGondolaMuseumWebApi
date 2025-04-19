@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using Newtonsoft.Json.Linq;
 
 namespace TheGondolaMuseumWebApi.Models
 {
@@ -43,11 +44,14 @@ namespace TheGondolaMuseumWebApi.Models
             if (allSimilarVideos != null)
             {
                 string[] similarVideoStrings = allSimilarVideos.Split("_");
+                List<int> similarVideosList = new List<int>();
 
                 foreach (string similarVideoId in similarVideoStrings)
                 {
-                    gondolaVideoItem.SimilarVideos.Append(int.Parse(similarVideoId));
+                    similarVideosList.Add(int.Parse(similarVideoId));
                 }
+
+                gondolaVideoItem.SimilarVideos = similarVideosList.ToArray();
             }
 
             return gondolaVideoItem;

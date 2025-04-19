@@ -21,9 +21,15 @@ namespace TheGondolaMuseumWebApi.Controllers
         }
 
         [HttpGet("GetMultipleByTag")]
-        public string GetMultipleByTag()
+        public string GetMultipleByTag(string tag)
         {
-            return JsonConvert.SerializeObject(GondolaVideosDL.SelectMultipleByTag(""));
+            return JsonConvert.SerializeObject(GondolaVideosDL.SelectMultipleByTag(tag));
+        }
+
+        [HttpGet("GetAllDistinctTags")]
+        public string GetAllDistinctTags()
+        {
+            return JsonConvert.SerializeObject(GondolaVideosDL.SelectAllDistinctTags());
         }
     }
 }
