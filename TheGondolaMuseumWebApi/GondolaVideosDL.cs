@@ -104,15 +104,22 @@ namespace TheGondolaMuseumWebApi
                     {
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
+                            int i = 0;
+
                             while (reader.Read())
                             {
-                                string tags = (string)reader["Tags"];
+                                i++;
 
-                                foreach(string tag in tags.Split("_"))
+                                string tags = ConvertFromDBVal<string>(reader["Tags"]);
+
+                                if (tags != null)
                                 {
-                                    if (!distinctTags.Contains(tag))
+                                    foreach (string tag in tags.Split("_"))
                                     {
-                                        distinctTags.Add(tag);
+                                        if (!distinctTags.Contains(tag))
+                                        {
+                                            distinctTags.Add(tag);
+                                        }
                                     }
                                 }
                             }
@@ -131,6 +138,18 @@ namespace TheGondolaMuseumWebApi
             distinctTagsList.Sort();
 
             return distinctTagsList;
+        }
+
+        private static T ConvertFromDBVal<T>(object obj)
+        {
+            if (obj == null || obj == DBNull.Value)
+            {
+                return default(T); // returns the default value for the type
+            }
+            else
+            {
+                return (T)obj;
+            }
         }
     }
 }

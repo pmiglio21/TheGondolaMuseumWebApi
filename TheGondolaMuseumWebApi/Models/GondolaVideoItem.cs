@@ -36,7 +36,7 @@ namespace TheGondolaMuseumWebApi.Models
                 RippedFrom = ConvertFromDBVal<string>(reader["RippedFrom"]),
             };
 
-            string allTags = (string)reader["Tags"];
+            string allTags = ConvertFromDBVal<string>(reader["Tags"]);
             gondolaVideoItem.Tags = allTags.Split("_");
 
             string allSimilarVideos = ConvertFromDBVal<string>(reader["SimilarTo"]);
