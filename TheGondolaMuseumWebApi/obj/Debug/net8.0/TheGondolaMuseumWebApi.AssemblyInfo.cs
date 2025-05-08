@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TheGondolaMuseumWebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c1de946c093112333ac4112c154772707e3a92f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42a3d280cee355e7a7a88df4e56a6a07fe2159c8")]
 [assembly: System.Reflection.AssemblyProductAttribute("TheGondolaMuseumWebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TheGondolaMuseumWebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

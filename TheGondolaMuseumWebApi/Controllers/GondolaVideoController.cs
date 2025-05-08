@@ -1,3 +1,4 @@
+using Azure;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -17,13 +18,44 @@ namespace TheGondolaMuseumWebApi.Controllers
         [HttpGet("GetSingleByVideoId")]
         public string GetSingleByVideoId(int videoId)
         {
-            return JsonConvert.SerializeObject(GondolaVideosDL.SelectSingleByVideoId(videoId));
+            if (videoId > 0)
+            {
+                return JsonConvert.SerializeObject(GondolaVideosDL.SelectSingleByVideoId(videoId));
+            }
+            else
+            {
+                return string.Empty;
+            }
         }
 
         [HttpGet("GetMultipleByTag")]
         public string GetMultipleByTag(string tag)
         {
             return JsonConvert.SerializeObject(GondolaVideosDL.SelectMultipleByTag(tag));
+
+            //if (!string.IsNullOrWhiteSpace(tag))
+            //{
+                
+            //}
+            //else
+            //{
+            //    return string.Empty;
+            //}
+        }
+
+        [HttpGet("GetMultipleBySource")]
+        public string GetMultipleBySource(string source)
+        {
+            return JsonConvert.SerializeObject(GondolaVideosDL.SelectMultipleBySource(source));
+
+            //if (!string.IsNullOrWhiteSpace(source))
+            //{
+                
+            //}
+            //else
+            //{
+            //    return string.Empty;
+            //}
         }
 
         [HttpGet("GetAllDistinctTags")]

@@ -84,6 +84,45 @@ namespace TheGondolaMuseumWebApi
             return gondolaVideoItems;
         }
 
+        public static List<GondolaVideoItem> SelectMultipleBySource(string source)
+        {
+            List<GondolaVideoItem> gondolaVideoItems = new List<GondolaVideoItem>();
+
+            // Create a connection object
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    // Open the connection
+                    connection.Open();
+                    //Console.WriteLine("Connection to SQL Server established successfully.");
+
+                    string query = $"EXEC [GondolaVideosSelectMultipleBySource] '{source}'";
+
+                    // Execute the query
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                GondolaVideoItem gondolaVideoItem = new GondolaVideoItem();
+
+                                gondolaVideoItems.Add(gondolaVideoItem.ToGondolaVideoItem(reader));
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Handle exceptions
+                    Console.WriteLine($"An error occurred: {ex.Message}");
+                }
+            }
+
+            return gondolaVideoItems;
+        }
+
         public static List<string> SelectAllDistinctTags()
         {
             HashSet<string> distinctTags = new HashSet<string>();
