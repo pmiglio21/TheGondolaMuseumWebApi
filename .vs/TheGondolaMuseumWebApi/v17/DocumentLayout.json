@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\pmigl\\OneDrive\\Documents\\GitHub\\TheGondolaMuseumWebApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EF25D053-D786-45FF-9EEA-559A04325ADD}|TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi.csproj|c:\\users\\pmigl\\onedrive\\documents\\github\\thegondolamuseumwebapi\\thegondolamuseumwebapi\\controllers\\gondolavideocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF25D053-D786-45FF-9EEA-559A04325ADD}|TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi.csproj|solutionrelative:thegondolamuseumwebapi\\controllers\\gondolavideocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF25D053-D786-45FF-9EEA-559A04325ADD}|TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi.csproj|c:\\users\\pmigl\\onedrive\\documents\\github\\thegondolamuseumwebapi\\thegondolamuseumwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF25D053-D786-45FF-9EEA-559A04325ADD}|TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi.csproj|solutionrelative:thegondolamuseumwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF25D053-D786-45FF-9EEA-559A04325ADD}|TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi.csproj|c:\\users\\pmigl\\onedrive\\documents\\github\\thegondolamuseumwebapi\\thegondolamuseumwebapi\\igondolavideosdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF25D053-D786-45FF-9EEA-559A04325ADD}|TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi.csproj|solutionrelative:thegondolamuseumwebapi\\igondolavideosdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EF25D053-D786-45FF-9EEA-559A04325ADD}|TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi.csproj|c:\\users\\pmigl\\onedrive\\documents\\github\\thegondolamuseumwebapi\\thegondolamuseumwebapi\\gondolavideosdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{EF25D053-D786-45FF-9EEA-559A04325ADD}|TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi.csproj|c:\\users\\pmigl\\onedrive\\documents\\github\\thegondolamuseumwebapi\\thegondolamuseumwebapi\\models\\gondolavideoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF25D053-D786-45FF-9EEA-559A04325ADD}|TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi.csproj|solutionrelative:thegondolamuseumwebapi\\models\\gondolavideoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF25D053-D786-45FF-9EEA-559A04325ADD}|TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi.csproj|c:\\users\\pmigl\\onedrive\\documents\\github\\thegondolamuseumwebapi\\thegondolamuseumwebapi\\controllers\\gondolavideocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF25D053-D786-45FF-9EEA-559A04325ADD}|TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi.csproj|solutionrelative:thegondolamuseumwebapi\\controllers\\gondolavideocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pmigl\\OneDrive\\Documents\\GitHub\\TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi\\Program.cs",
+              "RelativeDocumentMoniker": "TheGondolaMuseumWebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\pmigl\\OneDrive\\Documents\\GitHub\\TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi\\Program.cs",
+              "RelativeToolTip": "TheGondolaMuseumWebApi\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T16:53:28.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "GondolaVideoItem.cs",
               "DocumentMoniker": "C:\\Users\\pmigl\\OneDrive\\Documents\\GitHub\\TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi\\Models\\GondolaVideoItem.cs",
               "RelativeDocumentMoniker": "TheGondolaMuseumWebApi\\Models\\GondolaVideoItem.cs",
               "ToolTip": "C:\\Users\\pmigl\\OneDrive\\Documents\\GitHub\\TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi\\Models\\GondolaVideoItem.cs",
               "RelativeToolTip": "TheGondolaMuseumWebApi\\Models\\GondolaVideoItem.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAD4vzkAAAAjAAAA",
+              "ViewState": "AQIAADQAAAAAAAAAAAAiwDoAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T15:09:48.873Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GondolaVideosDL.cs",
               "DocumentMoniker": "C:\\Users\\pmigl\\OneDrive\\Documents\\GitHub\\TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi\\GondolaVideosDL.cs",
               "RelativeDocumentMoniker": "TheGondolaMuseumWebApi\\GondolaVideosDL.cs",
               "ToolTip": "C:\\Users\\pmigl\\OneDrive\\Documents\\GitHub\\TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi\\GondolaVideosDL.cs",
               "RelativeToolTip": "TheGondolaMuseumWebApi\\GondolaVideosDL.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAawC8AAAAtAAAA",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAiwLkAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T18:13:58.47Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "IGondolaVideosDL.cs",
+              "DocumentMoniker": "C:\\Users\\pmigl\\OneDrive\\Documents\\GitHub\\TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi\\IGondolaVideosDL.cs",
+              "RelativeDocumentMoniker": "TheGondolaMuseumWebApi\\IGondolaVideosDL.cs",
+              "ToolTip": "C:\\Users\\pmigl\\OneDrive\\Documents\\GitHub\\TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi\\IGondolaVideosDL.cs",
+              "RelativeToolTip": "TheGondolaMuseumWebApi\\IGondolaVideosDL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T13:28:33.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "GondolaVideoController.cs",
               "DocumentMoniker": "C:\\Users\\pmigl\\OneDrive\\Documents\\GitHub\\TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi\\Controllers\\GondolaVideoController.cs",
               "RelativeDocumentMoniker": "TheGondolaMuseumWebApi\\Controllers\\GondolaVideoController.cs",
               "ToolTip": "C:\\Users\\pmigl\\OneDrive\\Documents\\GitHub\\TheGondolaMuseumWebApi\\TheGondolaMuseumWebApi\\Controllers\\GondolaVideoController.cs",
               "RelativeToolTip": "TheGondolaMuseumWebApi\\Controllers\\GondolaVideoController.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAAAC0AAAAoAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAkwCEAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T20:08:38.598Z",
               "EditorCaption": ""

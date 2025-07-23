@@ -4,11 +4,11 @@ using TheGondolaMuseumWebApi.Models;
 
 namespace TheGondolaMuseumWebApi
 {
-    public static class GondolaVideosDL
+    public class GondolaVideosDL : IGondolaVideosDL
     {
-        private static string connectionString = "Server=localhost;Database=Gondola;Trusted_Connection=True;TrustServerCertificate=True;";
+        private const string connectionString = "Server=localhost;Database=Gondola;Trusted_Connection=True;TrustServerCertificate=True;";
 
-        public static GondolaVideoItem SelectSingleByVideoId(int videoId)
+        public GondolaVideoItem SelectSingleByVideoId(int videoId)
         {
             GondolaVideoItem gondolaVideoItem = new GondolaVideoItem();
 
@@ -45,7 +45,7 @@ namespace TheGondolaMuseumWebApi
             return gondolaVideoItem;
         }
 
-        public static List<GondolaVideoItem> SelectMultipleByTag(string tag)
+        public List<GondolaVideoItem> SelectMultipleByTag(string tag)
         {
             List<GondolaVideoItem> gondolaVideoItems = new List<GondolaVideoItem>();
 
@@ -84,7 +84,7 @@ namespace TheGondolaMuseumWebApi
             return gondolaVideoItems;
         }
 
-        public static List<GondolaVideoItem> SelectMultipleBySource(string source)
+        public List<GondolaVideoItem> SelectMultipleBySource(string source)
         {
             List<GondolaVideoItem> gondolaVideoItems = new List<GondolaVideoItem>();
 
@@ -123,7 +123,7 @@ namespace TheGondolaMuseumWebApi
             return gondolaVideoItems;
         }
 
-        public static List<string> SelectAllDistinctTags()
+        public List<string> SelectAllDistinctTags()
         {
             HashSet<string> distinctTags = new HashSet<string>();
 
@@ -179,7 +179,7 @@ namespace TheGondolaMuseumWebApi
             return distinctTagsList;
         }
 
-        private static T ConvertFromDBVal<T>(object obj)
+        private T ConvertFromDBVal<T>(object obj)
         {
             if (obj == null || obj == DBNull.Value)
             {

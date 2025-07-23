@@ -9,10 +9,12 @@ namespace TheGondolaMuseumWebApi.Controllers
     public class GondolaVideoController : ControllerBase
     {
         private readonly ILogger<GondolaVideoController> _logger;
+        private IGondolaVideosDL _gondolaVideosDL;
 
-        public GondolaVideoController(ILogger<GondolaVideoController> logger)
+        public GondolaVideoController(ILogger<GondolaVideoController> logger, IGondolaVideosDL gondolaVideosDL)
         {
             _logger = logger;
+            _gondolaVideosDL = gondolaVideosDL;
         }
 
         [HttpGet("GetSingleByVideoId")]
@@ -20,7 +22,7 @@ namespace TheGondolaMuseumWebApi.Controllers
         {
             if (videoId > 0)
             {
-                return JsonConvert.SerializeObject(GondolaVideosDL.SelectSingleByVideoId(videoId));
+                return JsonConvert.SerializeObject(_gondolaVideosDL.SelectSingleByVideoId(videoId));
             }
             else
             {
@@ -31,37 +33,19 @@ namespace TheGondolaMuseumWebApi.Controllers
         [HttpGet("GetMultipleByTag")]
         public string GetMultipleByTag(string tag)
         {
-            return JsonConvert.SerializeObject(GondolaVideosDL.SelectMultipleByTag(tag));
-
-            //if (!string.IsNullOrWhiteSpace(tag))
-            //{
-                
-            //}
-            //else
-            //{
-            //    return string.Empty;
-            //}
+            return JsonConvert.SerializeObject(_gondolaVideosDL.SelectMultipleByTag(tag));
         }
 
         [HttpGet("GetMultipleBySource")]
         public string GetMultipleBySource(string source)
         {
-            return JsonConvert.SerializeObject(GondolaVideosDL.SelectMultipleBySource(source));
-
-            //if (!string.IsNullOrWhiteSpace(source))
-            //{
-                
-            //}
-            //else
-            //{
-            //    return string.Empty;
-            //}
+            return JsonConvert.SerializeObject(_gondolaVideosDL.SelectMultipleBySource(source));
         }
 
         [HttpGet("GetAllDistinctTags")]
         public string GetAllDistinctTags()
         {
-            return JsonConvert.SerializeObject(GondolaVideosDL.SelectAllDistinctTags());
+            return JsonConvert.SerializeObject(_gondolaVideosDL.SelectAllDistinctTags());
         }
     }
 }
